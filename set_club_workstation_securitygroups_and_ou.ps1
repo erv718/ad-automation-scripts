@@ -1,3 +1,4 @@
+# Added Sep 2023: targets workstations in default Computers container
 #Get All Computers for Clubs OU and place in file
 Get-ADComputer -Filter * -SearchBase "CN=Computers,DC=ad,DC=corp.example,DC=com" | Select-Object Name | Export-CSV 'F:\Scripts\set_club_workstation_securitygroups_and_ou\defaultComputers.csv' -NoTypeInformation -Encoding UTF8
 Get-ADComputer -Filter * -SearchBase "OU=Clubs,OU=Locations,OU=[Company],DC=ad,DC=corp.example,DC=com" | Select-Object Name | Export-CSV 'F:\Scripts\set_club_workstation_securitygroups_and_ou\clubComputers.csv' -NoTypeInformation -Encoding UTF8
