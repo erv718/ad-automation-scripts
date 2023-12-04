@@ -1,3 +1,4 @@
+# Dec 2023: bulk OU migration via CSV input file
 $hostnames_csv = 'C:\users\$env:USERNAME\Desktop\hostnames.csv'
 $ous_csv = 'C:\users\$env:USERNAME\Desktop\ous.csv'
 $hostnames = Import-Csv -Path $hostnames_csv
